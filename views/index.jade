@@ -3,5 +3,14 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  br
+
+  -for (let i = 0; i < messages.length; ++i) {
+    p  #{messages[i].text}
+    p  #{messages[i].user}
+    p  #{messages[i].added}
+    br
+   -}
+
 
   a(href = "/new") Go to form page
