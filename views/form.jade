@@ -1,0 +1,17 @@
+extends layout 
+
+block content
+
+    p Hallllooooo!!!
+    a(href = "/") <- Go back
+    <form method="POST" action="/new">
+    put your inputs and buttons in here!
+    br
+    label(for="author-name")  Name: 
+    input(type="text", name="authorName")
+    br
+    label(for="author-message") Message: 
+    input(type="text", name="authorMessage")
+    br
+    <button type = "submit">Submit </button>
+    </form>
